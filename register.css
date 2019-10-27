@@ -1,0 +1,166 @@
+html {
+  margin: 0;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+  background-image: url('https://images3.alphacoders.com/817/thumb-1920-817313.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Montserrat;
+  font-size: 20px;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+.container {
+  position: relative;
+  color: white;
+  font-weight: 300;
+  overflow:hidden;
+}
+::-webkit-input-placeholder { 
+    color: #ffffff;
+}
+:-moz-placeholder { 
+   color: #ffffff;
+   opacity:  1;
+}
+::-moz-placeholder { 
+   color: #ffffff;
+   opacity:  1;
+}
+:-ms-input-placeholder { 
+   color: #ffffff;
+}
+.container.form-success .container h1 {
+  -webkit-transform: translateY(85px);
+      -ms-transform: translateY(85px);
+          transform: translateY(85px);
+}
+.form_container {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.form_container h1 {
+    font-size: 25px;
+    margin: 0;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-put;
+    transition-timing-function: ease-in-put;
+    font-weight: 600;
+}
+form {
+  padding: 20px 0 0;
+  position: relative;
+  z-index: 2;
+}
+form input[type='text'], input[type='password'], input[type='email'], input[type='tel'] {
+  appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 250px;
+  border-radius: 50px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+    font-family: Montserrat, FontAwesome;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  font-weight: 300;
+}
+
+
+form input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form input[type='text']:focus {
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form input[type='email']:focus {
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form input[type='password']:focus {
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form input[type='tel']:focus {
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form input[type='text']:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+form input[type='password']:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+form input[type='email']:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+form input[type='tel']:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+form button {
+  appearance: none;
+  outline: 0;
+  background-color: #1565c0;
+  border: 0;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 50px;
+  font-family: FontAwesome, Montserrat;
+  width: 250px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+form button:hover {
+
+}
+form button:before {
+    border-radius: inherit;
+    color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    opacity: .12;
+    -webkit-transition: .3s cubic-bezier(.25,.8,.5,1);
+    transition: .3s cubic-bezier(.25,.8,.5,1);
+    width: 100%;
+}
+form button:active:before, form button:focus:before, form button:hover:before {
+    background-color: currentColor;
+}
+.overlay {
+position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+}
+.ripplelink{position:relative;overflow:hidden;-webkit-transition:all 0.2s ease;-moz-transition:all 0.2s ease;-o-transition:all 0.2s ease;transition:all 0.2s ease;z-index:0}
+.ink{display:block;position:absolute;background:rgba(255,255,255,0.3);border-radius:100%;-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);transform:scale(0)}
+.animate{-webkit-animation:ripple 0.65s linear;-moz-animation:ripple 0.65s linear;-ms-animation:ripple 0.65s linear;-o-animation:ripple 0.65s linear;animation:ripple 0.65s linear}
+@-webkit-keyframes ripple{100%{opacity:0;-webkit-transform:scale(2.5)}}
+@-moz-keyframes ripple{100%{opacity:0;-moz-transform:scale(2.5)}}
+@-o-keyframes ripple{100%{opacity:0;-o-transform:scale(2.5)}}
+@keyframes ripple{100%{opacity:0;transform:scale(2.5)}}
